@@ -1,0 +1,51 @@
+git checkout -m build-process
+git checkout -m single-file-components
+git checkout -m routing
+git checkout -m api-communication
+git checkout -m state-management
+git checkout -m server-side-rendering
+git checkout -m testing
+git checkout -m deploying
+
+
+editorconfig.org
+
+
+check on version: use git cmd or git bash
+node package manager
+npm -v
+version in tutorial is 5.3.0
+installed verison from internet is 5.6.0
+
+git bash change directory to C:\Users\Mine\source\pluralSite\vuespa02
+cd ..
+cd "Mine/source/pluralSite/vuespa02"
+
+
+comment out all the stuff in the 02 package.json as dependencies
+
+delete the package-lock.json
+
+npm init -y
+
+Wrote to C:\Users\Mine\source\pluralSite\vuespa02\package.json:
+
+still looking for what wrote the package-lock...will see if in later
+
+
+
+
+
+npm install vue@2.4.2 --SAVE
+the --save is important, otherwise get a crap ton of junk
+
+$ npm install vue@2.4.2 --save
++ vue@2.4.2
+added 37 packages, removed 143 packages and updated 127 packages in 10.01s
+
+$ npm install vue@2.4.2 --save
+npm notice created a lockfile as package-lock.json. You should commit this file.
++ vue@2.4.2
+added 1 package in 0.825s
+
+
