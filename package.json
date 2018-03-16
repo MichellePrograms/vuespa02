@@ -1,9 +1,10 @@
 {
   "name": "vuespa02",
   "version": "1.0.0",
-  "description": "bstavroulakis",
+  "description": "mpeterson",
   "main": "server.js",
   "dependencies": {
+    "express": "^4.15.4",
     "vue": "^2.4.2"
   },
   "devDependencies": {},

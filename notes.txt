@@ -30,14 +30,10 @@ npm init -y
 
 Wrote to C:\Users\Mine\source\pluralSite\vuespa02\package.json:
 
-still looking for what wrote the package-lock...will see if in later
-
-
-
-
 
 npm install vue@2.4.2 --SAVE
-the --save is important, otherwise get a crap ton of junk
+the --save is important,  save adds vue to dependencies in package.json
+
 
 $ npm install vue@2.4.2 --save
 + vue@2.4.2
@@ -49,3 +45,17 @@ npm notice created a lockfile as package-lock.json. You should commit this file.
 added 1 package in 0.825s
 
 
+
+ $npm install express@4.15.4 --save
+this add of express get a crap ton of stuff in the node_modules
+
+make server.js file
+
+putting in the express package for the express server adds the package.lock.json
+add and modify the server.js file
+
+git bash cmd line
+node server
+
+go to localhost:3000
+http://localhost:3000/
