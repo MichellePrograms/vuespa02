@@ -80,3 +80,22 @@ make build folder and add a webpack.base.config.js
 npm install webpack@3.5.5 --save-dev
 puts it up in the package.json dev dependencies
 
+work on the app.js, client-entry.js , and the webpack.base.config
+
+commandline
+node ./node_modules/webpack/bin/webpack --config ./build/webpack.base.config.js
+
+ node ./node_modules/webpack/bin/webpack --config ./build/webpack.base.config.js
+Hash: e9b5af3d7ce46d29fcea
+Version: webpack 3.5.5
+Time: 94ms
+           Asset     Size  Chunks             Chunk Names
+assets/js/app.js  3.16 kB       0  [emitted]  app
+   [0] ./src/client-entry.js 108 bytes {0} [built]
+   [1] ./src/app.js 210 bytes {0} [built]
+
+ webpack creates us our dis > assets > js > app.js file
+ all this includes the pollyfill code from our setup thru webpack.base > client-entry > app
+
+ try this out in all the browser things!!!!!
+
