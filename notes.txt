@@ -107,4 +107,4 @@ chrome shows unexpected token <
 
 make sure to have correct binding between the app.js src file and the index.html file!!!!
 //template stuffs was there from initial pull
-
+make sure to have RIGHT js file location path!!! coming from dist folder
