@@ -45,6 +45,7 @@ npm notice created a lockfile as package-lock.json. You should commit this file.
 added 1 package in 0.825s
 
 
+make sure you have the show all files/folders chosen to see the node_modules folder etc
 
  $npm install express@4.15.4 --save
 this add of express get a crap ton of stuff in the node_modules
@@ -61,3 +62,21 @@ go to localhost:3000 all return hey there
 http://localhost:3000/
 http://localhost:3000/user
 http://localhost:3000/home
+
+
+in package.json
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+
+this means from command line you can type 'npm run start'
+or 'npm start'  to kick of startup script, which can turn into a big deal
+
+
+module bundler for the const refs usages in .js files, pollyfil in module bundler plugin for older browsers
+webpack is the choice because it does a lot
+
+make build folder and add a webpack.base.config.js
+npm install webpack@3.5.5 --save-dev
+puts it up in the package.json dev dependencies
+
