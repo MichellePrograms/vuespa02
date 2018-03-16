@@ -11,7 +11,10 @@ const indexHTML = (() => {
   return fs.readFileSync(path.resolve(__dirname, "./index.html"), "utf-8");
 })();
 
-//app.use("/dist", express.static(path.resolve(__dirname, "./dist")));
+//pull in the static file created by web pack in our dist folder
+// that holds the app.js file with all our pollyfills and content.
+// app here is the app express server ref that pulls in our dist content.
+app.use("/dist", express.static(path.resolve(__dirname, "./dist")));
 
 //require("./build/dev-server")(app);
 

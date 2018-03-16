@@ -8,6 +8,11 @@ const config = {
   entry: {
     app: path.resolve(__dirname, '../src/client-entry.js')
   },
+  resolve: { //resolve decreases performance and not recommended
+    alias: {
+      vue: 'vue/dist/vue.js'
+    }
+  },
   output: {
     path: path.resolve(__dirname, '../dist'),  //end result of web page included in distribution folder
     publicPath: '/',

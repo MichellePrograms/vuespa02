@@ -1,13 +1,15 @@
-//import Vue from 'vue'
+import Vue from 'vue'
 
-//const app = new Vue({
-//  data: {
-//    hello: 'hi there5'
-//  },
-//  template: '<div id="app">{{ hello }}</div>'
-//})
+const app = new Vue({
+  data: {
+    hello: 'hup hup hup'
+  }
+  //dont use template yet cuz it is just fillingin the hello on the index.html page right now!!
+  // breaks it
+  //},
+  //template: '<div id="app">{{ hello }}</div>'
+})
 
-//export { app }
+export { app }
 
 
-console.log("loaded the app.js");

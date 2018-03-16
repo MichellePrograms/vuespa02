@@ -97,5 +97,14 @@ assets/js/app.js  3.16 kB       0  [emitted]  app
  webpack creates us our dis > assets > js > app.js file
  all this includes the pollyfill code from our setup thru webpack.base > client-entry > app
 
- try this out in all the browser things!!!!!
+ re-run webpack and do npm start after changing the things to see page
+
+ seeing SCRIPT1002: Syntax error
+app.js (1,1)
+view source and see what is going on and test in all the browsers
+chrome shows unexpected token <
+
+
+make sure to have correct binding between the app.js src file and the index.html file!!!!
+//template stuffs was there from initial pull
 
