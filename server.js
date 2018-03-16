@@ -2,29 +2,22 @@
 
 const express = require("express");
 const app = express();
-//const fs = require("fs");
-//const path = require("path");
+const fs = require("fs");
+const path = require("path");  //returns path relative to server.js file
 
-//const indexHTML = (() => {
-//  return fs.readFileSync(path.resolve(__dirname, "./index.html"), "utf-8");
-//})();
+const indexHTML = (() => {
+  return fs.readFileSync(path.resolve(__dirname, "./index.html"), "utf-8");
+})();
 
 //app.use("/dist", express.static(path.resolve(__dirname, "./dist")));
 
 //require("./build/dev-server")(app);
 
-//app.get("*", (req, res) => {
-//  res.write(indexHTML);
-//  res.end();
-//});
-
-//listen to specific path
-//app.get("/user", () => {});
-
 app.get("*", (req, res) => {
-  res.write("hey there");
+  res.write(indexHTML);
   res.end();
 });
+
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {

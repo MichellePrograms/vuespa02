@@ -57,5 +57,7 @@ add and modify the server.js file
 git bash cmd line
 node server
 
-go to localhost:3000
+go to localhost:3000 all return hey there
 http://localhost:3000/
+http://localhost:3000/user
+http://localhost:3000/home
