@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\build",
+    "\\src",
+    "\\theme"
   ],
-  "SelectedNode": "\\node_modules",
   "PreviewInSolutionExplorer": false
 }

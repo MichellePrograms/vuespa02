@@ -1,6 +1,6 @@
 const path = require('path')
 
-//webpack will make all the distribution code needed
+//  webpack will make all the distribution code needed
 // by taking js files adding pollyfil etc and gening up
 // what is needed by browser
 
@@ -11,17 +11,16 @@ const config = {
   module: {
     rules: [
       {
-        enforce: 'pre',  //check files before modified  by other loaders
-        test: /(\.js$)/,
+        enforce: 'pre', // check files before modified  by other loaders
+        test: /(\.js$)/ | /(\.vue$)/,
         loader: 'eslint-loader',
         exclude: /node_modules/
+      },
+      {
+        test: /\.vue$/,
+        loader: 'vue-loader'
       }
     ]
-  },
-  resolve: { //resolve decreases performance and not recommended
-    alias: {
-      vue: 'vue/dist/vue.js'
-    }
   },
   output: {
     path: path.resolve(__dirname, '../dist'),  //end result of web page included in distribution folder

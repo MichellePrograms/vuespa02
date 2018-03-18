@@ -1,6 +1,25 @@
 Module 2 Single File Components
 
+cd ..
+cd "Mine/source/pluralSite/vuespa02"
+
 https://gist.github.com/bstavroulakis/dcaf903e3f8d3bf6e6fa202b34c3849a
 
 https://gist.github.com/bstavroulakis/dcaf903e3f8d3bf6e6fa202b34c3849a#file-02-01-vue-component
+
+
+https://marketplace.visualstudio.com/items?itemName=mubaidr.vuejs-extension-pack
+
+
+MUST remove the id attribute 'app' from the markup copied into the vue file for the
+template 
+
+npm install vue-loader@13.0.2 vue-template-compiler@2.4.2 --save-dev
+
+removed from the client-entry js file the module hot if chec
+because now with the vue loader it is smart enough
+to get it figured out
+
+clean up webpack base config too , no need to resolve to 
+complie templates on the fly
 
