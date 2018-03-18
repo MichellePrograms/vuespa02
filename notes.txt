@@ -126,4 +126,29 @@ C:\Users\Mine\AppData\Roaming\npm-cache\_logs
 ensure the webpack.clien.config and dev-server js file align
 npm now started fine
 
+error loading page
+Uncaught SyntaxError: Unexpected token <
+<script src="dist/assets/js/app.js"></script
+server cannot find this resource script
+look at the cmd for when the node started up......
+server started at http://localhost:3000
+webpack built 51999786e77927321ff9 in 269ms
+Hash: 51999786e77927321ff9
+Version: webpack 3.5.5
+Time: 269ms
+           Asset    Size  Chunks                    Chunk Names
+assets/js/app.js  269 kB       0  [emitted]  [big]  app
+   [0] ./src/client-entry.js 216 bytes {0} [built]
+   [1] ./src/app.js 281 bytes {0} [built]
+   [2] ./node_modules/vue/dist/vue.js 265 kB {0} [built]
+   [3] (webpack)/buildin/global.js 509 bytes {0} [built]
+webpack: Compiled successfully.
+
+now coming from assets/js/app.js not have dist in the file path
+
+
+change to data in vue app object causes the server
+to reload resources
+not auto reloading the browser page though even with
+the hot middleware module loaded
 
