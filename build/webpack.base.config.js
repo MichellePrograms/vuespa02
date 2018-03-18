@@ -8,6 +8,16 @@ const config = {
   entry: {
     app: path.resolve(__dirname, '../src/client-entry.js')
   },
+  module: {
+    rules: [
+      {
+        enforce: 'pre',  //check files before modified  by other loaders
+        test: /(\.js$)/,
+        loader: 'eslint-loader',
+        exclude: /node_modules/
+      }
+    ]
+  },
   resolve: { //resolve decreases performance and not recommended
     alias: {
       vue: 'vue/dist/vue.js'
