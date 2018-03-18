@@ -23,40 +23,12 @@ const config = {
     ]
   },
   output: {
-    path: path.resolve(__dirname, '../dist'),  //end result of web page included in distribution folder
+    path: path.resolve(__dirname, '../dist'), // end result of web page included in distribution folder
     publicPath: '/',
-    filename: 'assets/js/[name].js' //name is going to be app.js here from the entry above on line 8
+    filename: 'assets/js/[name].js' //  name is going to be app.js here from the entry above on line 8
   }
-};
+}
 
-  //dist folder is what will eventuall be deployed
-//all files are required for development
+//  dist folder is what will eventuall be deployed
+// all files are required for development
 module.exports = config
-
-//const config = {
-//  entry: {
-//    app: path.resolve(__dirname, '../src/client-entry.js')
-//  },
-//  module: {
-//    rules: [
-//      {
-//        enforce: 'pre',
-//        test: /(\.js$)/,
-//        loader: 'eslint-loader',
-//        exclude: /node_modules/
-//      }
-//    ]
-//  },
-//  resolve: {
-//    alias: {
-//      vue: 'vue/dist/vue.js'
-//    }
-//  },
-//  output: {
-//    path: path.resolve(__dirname, '../dist'),
-//    publicPath: '/',
-//    filename: 'assets/js/[name].js'
-//  }
-//}
-
-//module.exports = config
