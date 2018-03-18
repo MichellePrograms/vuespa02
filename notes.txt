@@ -71,6 +71,8 @@ in package.json
 
 this means from command line you can type 'npm run start'
 or 'npm start'  to kick of startup script, which can turn into a big deal
+CTRL-C to stop node server running in command line
+
 
 
 module bundler for the const refs usages in .js files, pollyfil in module bundler plugin for older browsers
@@ -108,3 +110,20 @@ chrome shows unexpected token <
 make sure to have correct binding between the app.js src file and the index.html file!!!!
 //template stuffs was there from initial pull
 make sure to have RIGHT js file location path!!! coming from dist folder
+
+
+
+to not have to manually run webpack to rebuild the dist file contents every time
+and stop and restart our local dev server
+and make things more effective in development, install webpack-dev-middleware and webpack hot
+
+run on cmd line
+npm install webpack-dev-middleware@1.12.0 webpack-hot-middleware@2.18.2 --save-dev
+
+adjusting configuration files and reruning npm start
+getting error
+C:\Users\Mine\AppData\Roaming\npm-cache\_logs
+ensure the webpack.clien.config and dev-server js file align
+npm now started fine
+
+

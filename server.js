@@ -16,7 +16,7 @@ const indexHTML = (() => {
 // app here is the app express server ref that pulls in our dist content.
 app.use("/dist", express.static(path.resolve(__dirname, "./dist")));
 
-//require("./build/dev-server")(app);
+require("./build/dev-server")(app);
 
 app.get("*", (req, res) => {
   res.write(indexHTML);
