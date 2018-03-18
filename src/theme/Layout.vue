@@ -12,7 +12,7 @@
       <footer class="footer">
         <div class="container">
           <div class="content has-text-centered">
-            Good times on 
+            Dynamic working vue
             <a href="https://twitter.com/bstavroulakis"
             target="_blank">Twitter</a>
           </div>
