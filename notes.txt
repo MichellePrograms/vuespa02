@@ -152,3 +152,33 @@ to reload resources
 not auto reloading the browser page though even with
 the hot middleware module loaded
 
+revising your webpack setup
+make sure to read your used modules readme.md file
+C:\Users\Mine\source\pluralSite\vuespa02\node_modules\webpack-hot-middleware\README.md
+we see much more loaded now when npm starts ups
+Time: 342ms
+           Asset    Size  Chunks                    Chunk Names
+assets/js/app.js  372 kB       0  [emitted]  [big]  app
+   [0] ./node_modules/html-entities/lib/html5-entities.js 49 kB {0} [built]
+   [1] multi webpack-hot-middleware/client ./src/client-entry.js 40 bytes {0} [built]
+   [2] (webpack)-hot-middleware/client.js 6.68 kB {0} [built]
+   [3] (webpack)/buildin/module.js 517 bytes {0} [built]
+   [4] ./node_modules/strip-ansi/index.js 161 bytes {0} [built]
+   [5] ./node_modules/ansi-regex/index.js 135 bytes {0} [built]
+   [6] (webpack)-hot-middleware/client-overlay.js 1.82 kB {0} [built]
+   [7] ./node_modules/ansi-html/index.js 4.26 kB {0} [built]
+   [8] ./node_modules/html-entities/index.js 231 bytes {0} [built]
+   [9] ./node_modules/html-entities/lib/xml-entities.js 2.99 kB {0} [built]
+  [10] ./node_modules/html-entities/lib/html4-entities.js 6.59 kB {0} [built]
+  [11] (webpack)-hot-middleware/process-update.js 3.88 kB {0} [built]
+  [12] ./src/client-entry.js 216 bytes {0} [built]
+  [13] ./src/app.js 284 bytes {0} [built]
+  [14] ./node_modules/vue/dist/vue.js 265 kB {0} [built]
+    + 1 hidden module
+webpack: Compiled successfully.
+
+
+
+
+
+

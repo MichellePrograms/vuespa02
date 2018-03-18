@@ -6,6 +6,6 @@ import { app } from './app'
 // see markup in the index.html page
 app.$mount('#app')
 
-//if (module.hot) {
-//  module.hot.accept()
-//}
+if (module.hot) {
+  module.hot.accept()
+}
