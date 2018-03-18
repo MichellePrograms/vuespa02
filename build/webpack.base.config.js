@@ -12,7 +12,7 @@ const config = {
     rules: [
       {
         enforce: 'pre', // check files before modified  by other loaders
-        test: /(\.js$)/ | /(\.vue$)/,
+        test: /(\.js$) | (\.vue$)/,
         loader: 'eslint-loader',
         exclude: /node_modules/
       },
